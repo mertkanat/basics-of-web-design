@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form</title>
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+		<h2 align="center">İş Başvuru Formu</h2>
+			
+		<form action="" method="post">
+			<fieldset>
+				<legend>Sözleşme</legend>
+					<label>Aşağıdaki bilgileri doğru olduğunu onaylıyorum ve sözleşmeyi kabul ediyorum</label>
+					<input type="checkbox" name="onay" required value="1" checked="on"/>
+					<br></br>
+			</fieldset>
+			<fieldset>
+				<legend>Kişisel Bilgiler</legend>
+				<table border="0">
+					<tr>
+						<td>Ad:</td>
+						<td><input type="text" name="isim" required /></td>
+					</tr>
+					<tr>
+						<td>Soyad:</td>
+						<td><input type="text" name="soyisim" required /></td>
+					</tr>
+					<tr>
+						<td>Doğum Tarihi:</td>
+						<td><input type="date" name="Yaş" required /></td>
+					</tr>
+					<tr>
+						<td>TC Kimlik No:</td>
+						<td><input type="number" name="tc" required /></td>
+					</tr>
+					<tr>
+						<td>Cinsiyet:</td>
+						<td>
+							<input type="radio" name="cinsiyet" value="erkek" required /> Erkek
+							<input type="radio" name="cinsiyet" value="Kadın" required /> Kadın
+						</td>
+					</tr>
+					<tr>
+						<td>Telefon Numarası:</td>
+						<td><input type="text" name="tel" required /></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input type="email" name="email" required /></td>
+					</tr>
+					<tr>
+						<td>Medeni Durumu:</td>
+						<td>
+							<input type="radio" name="1" value="Evli"/> Evli
+							<input type="radio" name="1" value="Bekar"/> Bekar
+						</td>
+					</tr>
+					<tr>
+						<td>Fotoğrafınızı Yükleyin:</td>
+						<td>
+							<input type="file" name="foto" />
+						</td>
+					</tr>
+					<tr>
+						<td>Adres:</td>
+						<td>
+						
+							<textarea name="adres" rows="10" cols="40" required > </textarea>
+						
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Eğitim Durumu</legend>
+					<table border="0" height="220">
+						<tr>
+							<td>Mezuniyet Durumu:</td>
+							<td>
+								<select required>
+									<option>İlk Okul</option>
+									<option>Orta Okul</option>
+									<option>Lise</option>
+									<option>Üniversite</option>
+								</select>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Yabancı Diller:</td>
+							<td>
+								<input type="checkbox" name="İngilizce" />İngilizce
+								<input type="checkbox" name="Almanca" />Almanca
+								<input type="checkbox" name="Fransızca" />Fransızca
+								<br/>
+								<input type="checkbox" name="İspanyolca"/>İspanyolca
+								<input type="checkbox" name="Rusça" />Rusça
+								<input type="checkbox" name="Arapça"/>Arapça
+								<br/>
+								Diğer Diller:
+								<input type="text" name="diğerdiller" />
+							</td>
+						</tr>
+						<tr>
+							<td>Yazılım Dilleri</td>
+							<td>
+								<input type="checkbox" name="Html" /> Html
+								<input type="checkbox" name="Css" /> Css
+								<input type="checkbox" name="JavaScript" /> JavaScript 
+								<br/>
+								<input type="checkbox" name="Python" /> Python
+								<input type="checkbox" name="C++" /> C++
+								<input type="checkbox" name="C#" /> C#
+								<br/>
+								Diğer Diller:
+								<input type="text" name="diğerdiller" />
+							</td>
+						</tr>
+						<tr> 
+							<td colspan="3" align="right"><input type="submit" value="Gönder"/> <input type="reset" value="Sil"/></td>
+						</tr>
+					</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
